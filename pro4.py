@@ -4,16 +4,20 @@ in this guide, then the Python Mentors group is available to help guide new
 contributors through the process."""
 
 i = i.upper()
-
+list=[]
 i = i.replace(",", " ")
 i = i.replace(".", " ")
 i = i.replace("\n", " ")
 i = i.split()
-for j in i:
-    print(j)
-k = set([])
-for j in i:
-    p = j+":"+str(i.count(j))
-    k.add(p)
-for j in k:
-    print(j)
+
+
+a = set([])
+for i in i :
+    p = i+":"+str(i.count(i))
+    a.add(p)
+
+for i in a:
+     list.append(i)
+list.sort()
+for i in list:
+ print(i)
